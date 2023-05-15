@@ -1,0 +1,1 @@
+# REACT Öğrenme Sürecinde Alınan Notlar
