@@ -42,7 +42,7 @@ Yukarıdaki kodda App.js dosyası import ediliyor. Daha sonra public/index.html 
 - Dinamik olarak bir yazı göstermek istersek {} ifadesi içinde yazılmalıdır. Örneğin {name} gibi. Yada {`Benim adım ${name}`} gibi de kullanılabilir.
 
 
-## Props Nedir?
+## Props Nedir?
     Componentlerimize parametre göndermek için kullanırız.
 
 - props ları gönderirken istediğimiz şekilde istediğimiz sırada gönderebiliriz.
@@ -53,3 +53,17 @@ Yukarıdaki kodda App.js dosyası import ediliyor. Daha sonra public/index.html 
 - Birden fazla veri tipi gönderilmek istenirse oneOfType kullanılır. 
 - Bir array içindeki alanlara erişmek istersek shape kullanılır.
 - Herhangi bir değer verilmemiş bir propa default bir değer vermek için defaultProps kullanılır.
+
+
+## State Nedir?
+  Componentler üzerinde, değerinin değişme potansiyeli olan bütün verileri tutan bir objedir.
+
+- state kullanmak için çağırmak gerekir. return ün dışında tanımlanır.
+  ```js
+  import {useState} from 'react'
+  ```
+  ```js
+  const [stateName, setStateName] = useState(defaultVar)
+  ```
+- Bir array içerisine bir veri eklemek istediğimizde [] içerisine set etmeliyiz. Ancak direkt olarak böyle yazarsak sadece en son set ettiğimiz veriyi görürüz. Bu yüzden set ederken setState([...stateName, data]) şeklinde yazıp state deki diğer verileri de almalıyız. Eğer veriyi başa eklemek istersekde setState([data, ...stateName]) şeklinde yazarız. 
+- Bir objeyi değiştirmek istediğimizde o objenin bir bölümünü değiştirme istersek setState({...stateName, key:value}) şeklinde yazarız.
