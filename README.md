@@ -67,3 +67,13 @@ Yukarıdaki kodda App.js dosyası import ediliyor. Daha sonra public/index.html 
   ```
 - Bir array içerisine bir veri eklemek istediğimizde [] içerisine set etmeliyiz. Ancak direkt olarak böyle yazarsak sadece en son set ettiğimiz veriyi görürüz. Bu yüzden set ederken setState([...stateName, data]) şeklinde yazıp state deki diğer verileri de almalıyız. Eğer veriyi başa eklemek istersekde setState([data, ...stateName]) şeklinde yazarız. 
 - Bir objeyi değiştirmek istediğimizde o objenin bir bölümünü değiştirme istersek setState({...stateName, key:value}) şeklinde yazarız.
+
+## Lifecycle (UseEffect) Nedir?
+  Componentler DOM'a mount olduğu anda, component üzerindeki state değiştiği anda veya unomunt olduğu anda bu durumların yakalanıp ilgili durumlara göre işlem yapıılmasıdır. 
+
+```js
+import {useEffect} from 'react';
+useEffect(() => {
+    
+  }, [])
+```
