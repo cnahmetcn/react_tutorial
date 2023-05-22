@@ -1,0 +1,99 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+li:nth-child(odd) {
+  background-color: rgb(255, 255, 255);
+}
+
+li:nth-child(even) {
+  background-color: aliceblue;
+}
+
+h1 {
+  width: 100%;
+  font-size: 100px;
+  margin: 20px 0 0 0;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+.dltBtn {
+  float: right;
+
+}
+
+ul {
+  width: 90%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.todo {
+  padding-left: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formWidth {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 47, 47, 0.15);
+  height: 35px;
+}
+
+button {
+  width: auto;
+  margin: 0 5px
+}
+
+.list {
+  width: 100%;
+  text-align: left;
+}
+
+.count {
+  font-weight: 700;
+  color: rgb(0, 9, 42);
+  margin: 0 5px;
+}
+
+.input {
+  width: 90%;
+  height: 40px;
+  margin: 10px 0;
+}
+
+.index {
+  width: 80%;
+  background-color: aliceblue;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+button {
+  border: none;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: rgb(175, 47, 47, 0.20);
+  color: rgb(0, 9, 42)
+}

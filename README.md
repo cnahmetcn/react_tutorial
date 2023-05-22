@@ -77,3 +77,16 @@ useEffect(() => {
     
   }, [])
 ```
+
+## Style
+  
+- Normal html in aksine React ta bir etiketin içine stil tanımı yapmak için style={{}} kullanılır.
+- Ayrıca *-* işareti kullanılmaz. Bunun yerine camelCase yapısı kullanılır. backgrounColor, marginBottom ... gibi.
+- Eğer dışarıdan bir css, js kütüphanesi kullanmak istiyorsanız, public klasörünün altındaki index.html içine ilgili kütüphaneleri ekleyin.
+- Farklı componentlerimiz olsun (A, B) ve bu componenetlerimiz için ayrı stil tanımlamalarımız (A/styles.css , B/styles.css) olsun. Her ne kadar farklı klasör ve componentler olsa da render edildiği zaman sadece bir tanımı alır ve hepsine uygular. Bunun önüne geçmek için stilleri (A/styles.module.css , B/styles.module.css) şeklinde oluşturmalıyız. Bu sayede css tanımıı aynı olsa da render edildiği zaman uniq bir değer atanmış oluyor.
+
+## Fetching
+  Bir API yi uygulamada göstermek için kullanılır. 
+
+- Bir API kullanacakken fetch ve axios kullanılabilir. Axios u kullanmak için axios kütüphanesini de yüklemek gerekir ```npm i axios```. Fetch için buna gerek yoktur.
+- Fetxh kullanırken gelen veri json parse edilmelidir. Axios da buna gerek yoktur ancak veri **res.data** şeklinde alınmalıdır.
