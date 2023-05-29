@@ -4,3 +4,29 @@
   min-height: 100vh;
   color: white;
 }
+
+.Row {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.Row > div {
+  flex: 1;
+  padding: 10px;
+  border: solid 1px #ccc;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list li {
+  cursor: pointer;
+}
+
+.user-list li:hover {
+  color: blue;
+}

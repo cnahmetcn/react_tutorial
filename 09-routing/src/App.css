@@ -1,0 +1,12 @@
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  border-bottom: solid 1px #ccc;
+  column-gap: 10px;
+
+}

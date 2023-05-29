@@ -1,0 +1,11 @@
+.form > div > label {
+  display: block;
+}
+
+.form > div {
+  margin-bottom: 10px;
+}
+
+.form > div > input, .form > div > textarea {
+  padding: 10px;
+}

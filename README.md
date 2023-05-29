@@ -90,3 +90,44 @@ useEffect(() => {
 
 - Bir API kullanacakken fetch ve axios kullanılabilir. Axios u kullanmak için axios kütüphanesini de yüklemek gerekir ```npm i axios```. Fetch için buna gerek yoktur.
 - Fetxh kullanırken gelen veri json parse edilmelidir. Axios da buna gerek yoktur ancak veri **res.data** şeklinde alınmalıdır.
+
+
+### Async & Await 
+  Bir işlemin tamamlanmasını bekledikten sonra diğer işlemi yapmak için kullanılır.
+ 
+
+
+## Routing 
+  Link ve yönlendirme işlemleri için kullanılır.
+
+```cd
+npm i react-router-dom
+```
+
+- Route ları <BrowserRouter> </BrowserRouter> tagı içinde yazmalıyız. 
+- <Link> </Link> tag ı ile react için link ler oluşturabiliriz.
+- useNavigator hook u ile <Link> kullanmadan linkler oluşturabiliriz. Ayrıca linke -1 vererek geri dönmesini sağlayabiliriz.
+- useParams ile linklere parametre verebiliriz.
+- useLocation ile route lar arası veri taşıyabiliriz.
+
+
+## Form İşlemleri (Formik)
+  Form işlemleri yapmak için formik paketi kullanılıyor.
+
+```cd
+npm i formik
+```
+
+- Eğer Formik kullanırken html formu kullanacaksak {() => ()} arrow fonksiyonun içine html formu yazmalıyız. 
+- Formik componenti yerine daha temiz bir kod bloğu yazmak istersek useFormik hook u kullanılır. 
+- Form submit edildiği anda bir işlem yapmak istiyorsak **isSubmitting** kullanılır. 
+- onsubmit te **bag** isimli bir parametre mevcut ve bu parametre ile formu gönderdikten sonra initial haline dönderebiliriz.
+- Form kontrollerini Yup kütüphanesi ile yapabiliriz.
+- Kullanıcı deneyimi için bir alanda hata olduğunda tüm alanlarda hata mesajını göstermek yerine ilgili alanda ilgili hata mesajını göstermek için handleBlur ve touched kullanılır. 
+- Backend tarafından oluşturulan hataları setErrors ile yakalayabiliriz. 
+
+
+## Memoization
+  Memo ile gereksiz bileşen render süreçlerinin önüne nasıl geçilebilir.  
+
+- React.memo ve useMemo kullanarak işlem yapılmayan componentlerin yeniden render edilmesini önleyebiliriz.          
