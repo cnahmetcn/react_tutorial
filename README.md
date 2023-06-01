@@ -130,4 +130,16 @@ npm i formik
 ## Memoization
   Memo ile gereksiz bileşen render süreçlerinin önüne nasıl geçilebilir.  
 
-- React.memo ve useMemo kullanarak işlem yapılmayan componentlerin yeniden render edilmesini önleyebiliriz.          
+- React.memo ve useMemo kullanarak işlem yapılmayan componentlerin yeniden render edilmesini önleyebiliriz.  
+- useCallback hook u fonksiyonlar için kullanılır. Bir component içindeki bir fonksiyon bir başka component içinde kullanılıyorsa useCallback hook u ile o fonksiyonu memoize edebiliriz. Böylece o fonksiyonun bağlı olduğu component tekrar render edilmediği sürece o fonksiyon tekrar oluşturulmaz. Bu da performans açısından önemlidir.
+
+
+## Context API 
+  State leri yönetebileceğimiz bir araçtır. 
+
+- State yönetim aracından beklentiler şu şekildedir.
+  1. Başlangıç state ini tanımlamak.
+  2. Bu state e erişmek.
+  3. Bu state i değiştirmek.
+
+- createContext ile Context i oluşturmak için ve bu Context i kullanmak için de useContext hooku kullanılır. 
