@@ -143,3 +143,37 @@ npm i formik
   3. Bu state i değiştirmek.
 
 - createContext ile Context i oluşturmak için ve bu Context i kullanmak için de useContext hooku kullanılır. 
+
+
+## NPM KÜtüphanesi 
+  NPM e paket yükleme işlemlerini içerir.
+
+- ```npm i -g create-react-library``` komutu ile paketi bilgisayarımıza kuruyoruz.
+- https://remarkablemark.org/npm-package-name-checker/ adresinden yazağımızı npm paketi için ismin uygun olup olmadığına bakabiliriz. 
+- Paketi npm e göndermek için;
+  - npm login
+  - username: alanına kullanıcı adımızı
+  - password: alanına şifremizi
+  - email: alanına eposta adresimizi giriyoruz.
+  - Login olduktan sonra ```npm publish``` komuutunu çalıştırıyoruz.
+- Versiyon (a.b.c.) dersek
+  - **c** -> Bug fix ve patch işlemleri yapılmış ise artırılır.
+  - **b** -> Minör değişiklikler (küçük değişiklikler) yapılmış ise artırılır.
+  - **a** -> Sistemi etkileyecek majör değişiklikler (büyük değişiklikler) yapılmış ise artırılır.
+- Değişiklik yapılıp atılacağı zaman manuel olarak da version u güncelleştirebileceğimiz gibi terminal üzerinden npm komutlarını kullanarak da yapabiliriz. 
+  - ```npm version (partch / major / minor) -f``` olarak yazabiliriz.
+  - Daha sonra ```npm publish``` komuutunu çalıştırıyoruz.
+- Paketi kullandığımız yerlerde ```npm upgrade package_name``` diyerek paketimizi güncelleyebiliriz.
+
+
+## Unit Test 
+  Projemizin doğru çalışıp çalışmadığını kontrol etmemiz için gerekli olan testlerdir.
+
+- ```npm test``` ile test i başlatabiliriz. 
+  - Tüm testleri çalıştırmak için a'ya basın.
+  - Yalnızca başarısız testleri çalıştırmak için f tuşuna basın.
+  - Yalnızca değiştirilen dosyalarla ilgili testleri çalıştırmak için o'ya basın.
+  - İzleme modundan çıkmak için q düğmesine basın.
+  - Bir dosya adı düzenli ifade kalıbına göre filtrelemek için p'ye basın.
+  - Bir test adı düzenli ifade kalıbına göre filtrelemek için t tuşuna basın.
+- Kendi test dosyamızı yazmak için **filename.test.js** adında ilgili test dosyamızı oluşturabiliriz.
