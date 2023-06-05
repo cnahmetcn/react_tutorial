@@ -177,3 +177,28 @@ npm i formik
   - Bir dosya adı düzenli ifade kalıbına göre filtrelemek için p'ye basın.
   - Bir test adı düzenli ifade kalıbına göre filtrelemek için t tuşuna basın.
 - Kendi test dosyamızı yazmak için **filename.test.js** adında ilgili test dosyamızı oluşturabiliriz.
+
+
+## Deployment
+### Surge.sh
+  ```npm i -g surge``` ile kurabiliriz.
+
+- ```npm build``` komutunu çalıştırıyoruz.
+- build dizininin içine girip, 
+- **surge** komutu çalıştırılır.
+  - email vee şifre girilir.
+  - proje dizini ayarlanır.
+  - projenin yayınlanacağı subdomain seçilir.
+
+### Netlify
+
+- Öncelikle kayıt oluyoruz.
+- Atacağımız projen Github / Gitlab / Bitbucket da olmalıdır.
+- Projemizi oluşturduktan sonra Netlify da,
+  - Builds -> New Sitte from Git -> Github -> Select Ptoject -> Deploy
+  - Eğer build de hata alırsanız **npm run build** komutunu **CI= npm run build** olarak deeğiştirin.
+- Uygulamada yapılacak her değişiklik Github / Gitlab / Bitbucket a atıldığı zaman Netlify tarafından otomatik olarak build edilir.
+
+
+## Localization (Dil İşlemleri)
+  ```npm i react-intl```
