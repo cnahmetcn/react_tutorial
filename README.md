@@ -200,5 +200,5 @@ npm i formik
 - Uygulamada yapılacak her değişiklik Github / Gitlab / Bitbucket a atıldığı zaman Netlify tarafından otomatik olarak build edilir.
 
 
-## Localization (Dil İşlemleri)
+## Localization (Dil İşlemleri)
   ```npm i react-intl```
